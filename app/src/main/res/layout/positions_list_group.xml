@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="0dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/shape_border_layout"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            >
+
+        <FrameLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/frame"
+            android:background="@drawable/positions_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+
+            <TextView
+                android:id="@+id/monthName"
+                android:textSize="@dimen/font_size_small"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="FEBRUARY"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/openDay"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="23"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+
+
+
+        </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/frame"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/where"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:textStyle="bold"
+                    android:text="lome"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/firstLay"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            >
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/reporTitle"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/flag"
+                android:textSize="@dimen/font_size_big"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/blueMain"
+                android:layout_marginLeft="10dp"
+                android:text="TextView"
+                android:layout_alignParentTop="true"
+                />
+
+            <RelativeLayout
+                android:id="@+id/leftOne"
+                android:layout_alignLeft="@+id/reporTitle"
+                android:layout_alignStart="@+id/reporTitle"
+                android:layout_below="@+id/reporTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="true"
+                android:id="@+id/cbmText"
+                android:textStyle="bold"
+                android:textColor="@color/blueMain"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_positions"
+                android:text="CBM" />
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="true"
+                android:id="@+id/dwtText"
+                android:textStyle="bold"
+                android:textColor="@color/blueMain"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_positions"
+                android:text="DWT"
+                android:layout_below="@+id/cbmText" />
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="true"
+                android:id="@+id/loaText"
+                android:textColor="@color/blueMain"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_positions"
+                android:text="LOA"
+                android:textStyle="bold"
+                android:layout_below="@+id/dwtText" />
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="true"
+                android:id="@+id/lastText"
+                android:textColor="@color/blueMain"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_positions"
+                android:text="LAST"
+                android:layout_below="@+id/loaText" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rightOne"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/leftOne"
+                android:layout_toLeftOf="@+id/flag"
+                android:layout_below="@+id/reporTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/cbmText1"
+                    android:textStyle="bold"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:text="CBM" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:id="@+id/dwtText1"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:text="DWT"
+                    android:layout_below="@+id/cbmText1" />
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/loaText1"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:text="LOA"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/dwtText1" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:id="@+id/lastText1"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:text="LAST"
+                    android:layout_below="@+id/loaText1" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/flag"
+                android:src="@drawable/post_chartering_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+ </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLay"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fafafa"
+        tools:context="com.xendpay.test.testprojekat.MainActivity">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#fafafa"
+            android:fillViewport="true" >
+
+
+            <RelativeLayout
+                android:id="@+id/layoutFirst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/navLay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    >
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/my_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="#3293ad"
+                        android:elevation="4dp"
+                        android:paddingRight="55dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="?attr/actionBarSize"
+                            >
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/textTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="@dimen/font_size_big"
+                                android:textColor="#ffffff"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.Toolbar>
+
+
+
+                </FrameLayout>
+
+
+
+
+                <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/webview"
+                    android:layout_below="@+id/navLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+        </ScrollView>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:paddingTop="50dp"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#5900334b"
+        android:dividerHeight="1dp"
+        android:background="#2d5a70"/>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+

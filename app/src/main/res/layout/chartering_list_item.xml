@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:background="@drawable/shape_border_layout_bottom"
+        android:id="@+id/linLay"
+        android:paddingLeft="5dp"
+        android:paddingRight="7dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/firstLay"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <!-- Layout za dugme Chartering party -->
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bottom_button_shape"
+                android:id="@+id/charteringParty">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHARTER PARTY"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_below="@+id/charteringParty"
+                android:background="@drawable/bottom_button_shape"
+                android:id="@+id/shipDocumentation">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHIP DOCUMENTATION"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_below="@+id/shipDocumentation"
+                android:background="@drawable/bottom_button_shape"
+                android:id="@+id/invoice">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INVOICE"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_below="@+id/invoice"
+                android:background="@drawable/bottom_button_shape"
+                android:id="@+id/statementOfFact">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STATEMENT OF FACT"
+                    android:textColor="@color/whiteColor"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

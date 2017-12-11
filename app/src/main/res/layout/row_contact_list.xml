@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="8dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/firstLay"
+        android:background="@drawable/shape_border_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageLeft"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            />
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/imageLeft"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/firstLatLay"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blueMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_standard"
+                android:text="tex"
+                />
+
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blueMain"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/firstName"
+                android:textSize="@dimen/font_size_standard"
+                android:text="tex"
+                android:layout_toLeftOf="@+id/role"
+                />
+
+            <TextView
+                android:id="@+id/role"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blueMain"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_standard"
+                android:text="text"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/bott"
+            android:id="@+id/bigFirst"
+            android:paddingBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/firstLatLay"
+            android:layout_toRightOf="@+id/imageLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/telOneLay"
+            android:layout_marginRight="@dimen/right_edge_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/telOne"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blueMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_standard"
+                android:text="TextView"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/telOneLay"
+            android:layout_width="fill_parent"
+            android:id="@+id/telTwoLay"
+            android:layout_marginRight="@dimen/right_edge_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/telTwo"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blueMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_standard"
+                android:text="TextView"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/telTwoLay"
+            android:layout_width="fill_parent"
+            android:id="@+id/bottomLay"
+            android:layout_marginRight="@dimen/right_edge_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mailText"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/blueMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_standard"
+                android:text="Mail"
+                />
+
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/firstLatLay"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bott"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/contact_card" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/arrow"-->
+        <!--android:textColor="@color/tabBar"-->
+        <!--android:layout_width="13dp"-->
+        <!--android:layout_height="13dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:src="@drawable/notifications_arrow"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="@dimen/right_edge_margin"-->
+        <!--android:text="TextView"-->
+        <!--/>-->
+
+
+    </RelativeLayout>
+
+    <!-- Horizontalna linija -->
+    <View
+        android:id="@+id/hr1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#0D1d1d26"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="0dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/backgroundColor">
+
+
+    <LinearLayout
+        android:background="@drawable/shape_border_layout"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_border_right"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageLeft"
+                android:layout_width="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/chartering_blue_clock"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/firstLay"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/reporTitle"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/flag"
+                android:textSize="@dimen/font_size_big"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/blueMain"
+                android:layout_marginLeft="10dp"
+                android:text="TextView"
+                android:layout_alignParentTop="true"
+                />
+
+            <me.grantland.widget.AutofitTextView
+                android:singleLine="true"
+                tools:ignore="MissingPrefix"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="true"
+                android:id="@+id/reportDate"
+                android:textColor="@color/blueMain"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/flag"
+                android:textSize="@dimen/font_size_small"
+                android:text="TextView"
+                android:layout_below="@+id/reporTitle"
+                android:layout_alignLeft="@+id/reporTitle"
+                android:layout_alignStart="@+id/reporTitle" />
+
+            <RelativeLayout
+                android:layout_toLeftOf="@+id/flag"
+                android:layout_alignLeft="@+id/reporTitle"
+                android:layout_alignStart="@+id/reporTitle"
+                android:layout_below="@+id/reportDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/watch"
+                    android:src="@drawable/chartering_red_clock"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:singleLine="true"
+                    tools:ignore="MissingPrefix"
+                    android:id="@+id/date"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/greyHint"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/watch"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="TextView" />
+
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/flag"
+                android:src="@drawable/post_chartering_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

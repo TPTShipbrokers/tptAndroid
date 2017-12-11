@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TPT</string>
+    <string name="checkConnection">Please check internet connection</string>
+    <string name="connectionPlaceholder">There is no internet connection...</string>
+
+
+    <!-- NAVIGATION DRAWER -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <string-array name="services">
+        <item>POSITIONS</item>
+        <item>CHARTERING</item>
+        <item>POST CHARTERING</item>
+        <item>MARKET REPORT</item>
+        <item>SETTINGS</item>
+        <item>CONTACT</item>
+    </string-array>
+
+</resources>

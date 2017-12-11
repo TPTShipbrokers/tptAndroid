@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whiteColor">#ffffff</color>
+    <color name="redMain">#e33829</color>
+    <color name="blueMain">#02539c</color>
+    <color name="greyHint">#a4a4a4</color>
+    <color name="darkGrey">#6e6e6e</color>
+    <color name="backgroundColor">#f8f8f8</color>
+    <color name="blackLight">#4a4a4a</color>
+    <color name="internetConn">#013463</color>
+    <color name="textBlack">#000000</color>
+
+
+
+</resources>

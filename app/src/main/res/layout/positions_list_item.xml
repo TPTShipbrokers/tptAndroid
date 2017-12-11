@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:background="@drawable/shape_border_layout_bottom"
+        android:id="@+id/mainLinear"
+        android:paddingLeft="5dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:paddingLeft="5dp"
+                android:id="@+id/where"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/font_size_positions"
+                android:textStyle="bold"
+                android:text="ON SUBS"
+                android:textAllCaps="true"
+                android:textColor="@color/redMain"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:id="@+id/firstLay"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/leftOne"
+                android:layout_alignLeft="@+id/reporTitle"
+                android:layout_alignStart="@+id/reporTitle"
+                android:layout_below="@+id/reporTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/sireText"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:textStyle="bold"
+                    android:text="SIRE" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/temaText"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:textStyle="bold"
+                    android:text="TEMA"
+                    android:layout_below="@+id/sireText" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/leftOne"
+                android:layout_toLeftOf="@+id/flag"
+                android:layout_below="@+id/reporTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/sireText1"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:textStyle="bold"
+                    android:text="CBM" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/temaText1"
+                    android:textColor="@color/blueMain"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:textStyle="bold"
+                    android:text="DWT"
+                    android:layout_below="@+id/sireText1" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                >
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/leftSec"
+                    android:layout_alignLeft="@+id/reporTitle"
+                    android:layout_alignStart="@+id/reporTitle"
+                    android:layout_below="@+id/reporTitle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/commentsText"
+                        android:textColor="@color/blueMain"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_positions"
+                        android:textStyle="bold"
+                        android:text="COMMENTS" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/leftSec"
+                    android:layout_toLeftOf="@+id/flag"
+                    android:layout_below="@+id/reporTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:textAllCaps="true"
+                        android:id="@+id/commentsText1"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/blueMain"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_positions"
+                        android:text="LOA" />
+
+
+                </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                >
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+
+            <RelativeLayout
+                android:id="@+id/leftSec3"
+                android:layout_alignLeft="@+id/reporTitle"
+                android:layout_alignStart="@+id/reporTitle"
+                android:layout_below="@+id/reporTitle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/dateText"
+                    android:textColor="@color/greyHint"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:text="LAST UPDATE" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/leftSec3"
+                android:layout_toLeftOf="@+id/flag"
+                android:layout_below="@+id/reporTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:id="@+id/dateText1"
+                    android:textColor="@color/greyHint"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_positions"
+                    android:text="LOA" />
+
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <!-- Layout za dugme SIGNIN -->
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bottom_button_shape"
+                    android:id="@+id/callBroker">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CALL BROKER"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/font_size_standard"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <!-- Layout za dugme SIGNIN -->
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bottom_button_shape"
+                    android:id="@+id/emailBroker">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL BROOKER"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/font_size_standard"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

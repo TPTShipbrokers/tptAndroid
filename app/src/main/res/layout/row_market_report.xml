@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="0dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/shape_border_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@id/firstLay"
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/reporTitle"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/flag"
+            android:textSize="13sp"
+            android:textColor="@color/blueMain"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/reportDate"
+            android:textColor="@color/blueMain"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/flag"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:layout_below="@+id/reporTitle"
+            android:layout_alignLeft="@+id/reporTitle"
+            android:layout_alignStart="@+id/reporTitle" />
+
+        <ImageView
+            android:id="@+id/flag"
+            android:src="@drawable/market_report_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

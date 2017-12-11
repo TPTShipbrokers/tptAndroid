@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLay"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColor">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+
+        <RelativeLayout
+            android:id="@+id/layoutFirst"
+            android:paddingBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <FrameLayout
+                android:id="@+id/navLay"
+                android:layout_width="fill_parent"
+                android:layout_height="?attr/actionBarSize"
+                >
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/my_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#3293ad"
+                    android:elevation="4dp"
+                    android:paddingRight="50dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="?attr/actionBarSize"
+                        >
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EMAIL ENQUIRY"
+                            android:textSize="@dimen/font_size_big"
+                            android:textColor="#ffffff"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/placeholder"
+                android:layout_below="@id/navLay"
+                android:background="@color/internetConn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/textPLace"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connectionPlaceholder"
+                    android:textSize="@dimen/font_size_big"
+                    android:textColor="@color/whiteColor"
+                    />
+            </FrameLayout>
+
+
+            <!-- LAYOUT ZA IME -->
+            <RelativeLayout
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/account"
+                android:background="@color/blueMain"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/placeholder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/font_size_big"
+                    android:textColor="@color/whiteColor"
+                    android:text="SHIP NAME"
+                    android:textStyle="bold"
+                    android:id="@+id/shipNameyear"
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/whiteColor"
+                    android:layout_toRightOf="@+id/accImg"
+                    android:text="TO"
+                    android:layout_below="@+id/shipNameyear"
+                    android:id="@+id/shipName"
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="@dimen/left_edge_margin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/whiteColor"
+                    android:layout_below="@+id/shipNameyear"
+                    android:layout_toRightOf="@+id/shipName"
+                    android:text="BROKER"
+                    android:textStyle="bold"
+                    android:id="@+id/shipNameTo"
+                    android:layout_marginBottom="5dp"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/whiteColor"
+                    android:text="FROM"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/statusDesc"
+                    android:layout_below="@+id/shipName"
+                    android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/whiteColor"
+                    android:layout_toRightOf="@+id/statusDesc"
+                    android:text="TEXT"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/status"
+                    android:layout_below="@+id/shipName" />
+
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/whiteColor"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/status"
+                    android:layout_toRightOf="@+id/watch"
+                    android:text="SUBJECT"
+                    android:id="@+id/date"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/left_edge_margin"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/whiteColor"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/status"
+                    android:layout_toRightOf="@+id/date"
+                    android:text="ENQUIRY"
+                    android:textStyle="bold"
+                    android:id="@+id/dateFrom"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <!-- LAYOUT ZA PASSWORD -->
+            <RelativeLayout
+                android:id="@+id/existingPassword"
+                android:background="@drawable/shape_border_layout_full_edges"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/account"
+                android:layout_width="fill_parent"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textTitle"
+                    android:text=""
+                    android:textColor="@color/blueMain"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/font_size_standard"
+                    />
+
+
+                <TextView
+                    android:layout_below="@+id/textTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/switchSubs"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/blueMain"
+                    android:layout_centerVertical="true"
+                    android:text="No claims items reported"
+                    android:id="@+id/textSofComment"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/optional"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/existingPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/optionalText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="optional..."
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/font_size_standard"
+                    android:textColor="@color/greyHint"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/optionalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/leftLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:id="@+id/laycanText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LAYCAN..."
+                            android:layout_marginBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <TextView
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:id="@+id/voluimeText"
+                            android:layout_below="@+id/laycanText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VOLUME..."
+                            android:layout_marginBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <TextView
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/cargoText"
+                            android:layout_below="@+id/voluimeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CARGO..."
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <TextView
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:id="@+id/loadPortText"
+                            android:layout_below="@+id/cargoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOAD PORT..."
+                            android:paddingLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <TextView
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:id="@+id/discgargeText"
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@+id/loadPortText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DISCHARGE PORT..."
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <TextView
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:id="@+id/draftText"
+                            android:layout_below="@+id/discgargeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DRAFT..."
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@+id/leftLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/laycan"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_main_field"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:singleLine="true"
+                            android:textColorHint="@color/greyHint"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <EditText
+                            android:id="@+id/volume"
+                            android:singleLine="true"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_main_field"
+                            android:layout_below="@+id/laycan"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:textColorHint="@color/greyHint"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <EditText
+                            android:id="@+id/cargo"
+                            android:singleLine="true"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_main_field"
+                            android:layout_below="@+id/volume"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:textColorHint="@color/greyHint"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <EditText
+                            android:id="@+id/loadPort"
+                            android:singleLine="true"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_main_field"
+                            android:layout_below="@+id/cargo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:textColorHint="@color/greyHint"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/dischargePort"
+                            android:singleLine="true"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_main_field"
+                            android:layout_below="@+id/loadPort"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:textColorHint="@color/greyHint"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                        <EditText
+                            android:id="@+id/draft"
+                            android:singleLine="true"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/shape_main_field"
+                            android:layout_below="@+id/dischargePort"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:textColorHint="@color/greyHint"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textColor="@color/darkGrey"
+                            />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/optional"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+
+                <!-- Ram za layout za dugme dole -->
+                <RelativeLayout
+                    android:id="@+id/buttonSystem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <!-- Layout za dugme SIGNIN -->
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bottom_button_shape"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/linearLayout3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EMAIL ENQUIRY"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textStyle="bold"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

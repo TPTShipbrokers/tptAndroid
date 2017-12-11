@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLay"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColor">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fillViewport="true" >
+
+
+            <RelativeLayout
+                android:id="@+id/layoutFirst"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <FrameLayout
+                    android:id="@+id/navLay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    >
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/my_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="#3293ad"
+                        android:elevation="4dp"
+                        android:paddingRight="55dp"
+                        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="?attr/actionBarSize"
+                            >
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PREFERED POSITIONS VIEW"
+                                android:textSize="@dimen/font_size_big"
+                                android:textColor="#ffffff"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.Toolbar>
+
+
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/placeholder"
+                    android:layout_below="@id/navLay"
+                    android:background="@color/internetConn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/textPLace"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connectionPlaceholder"
+                        android:textSize="@dimen/font_size_big"
+                        android:textColor="@color/whiteColor"
+                        />
+                </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/listLay"
+                android:layout_below="@+id/placeholder"
+                android:background="@color/backgroundColor"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+
+
+
+                    <RelativeLayout
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/cmbRel"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/checkBoxCbm"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:src="@drawable/check_box_empty"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_big"
+                            android:textColor="@color/darkGrey"
+                            android:text="CBM (default)"
+                            android:layout_toRightOf="@+id/checkBoxCbm"
+                            android:id="@+id/text5"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/dwtRel"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:layout_below="@+id/cmbRel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/checkBoxDwt"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:src="@drawable/check_box_empty"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_big"
+                            android:textColor="@color/darkGrey"
+                            android:text="DWT (default)"
+                            android:layout_toRightOf="@+id/checkBoxDwt"
+                            android:id="@+id/text10"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/loaRel"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:layout_below="@+id/dwtRel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/checkBoxLoa"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:src="@drawable/check_box_empty"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_big"
+                            android:textColor="@color/darkGrey"
+                            android:text="LOA (default)"
+                            android:layout_toRightOf="@+id/checkBoxLoa"
+                            android:id="@+id/text15"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/lastRel"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:layout_below="@+id/loaRel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/checkBoxLast"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:src="@drawable/check_box_empty"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_big"
+                            android:textColor="@color/darkGrey"
+                            android:text="LAST (default)"
+                            android:layout_toRightOf="@+id/checkBoxLast"
+                            android:id="@+id/text20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/sireRel"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:layout_below="@+id/lastRel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/checkBoxSire"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:src="@drawable/check_box_empty"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_big"
+                            android:textColor="@color/darkGrey"
+                            android:text="SIRE"
+                            android:layout_toRightOf="@+id/checkBoxSire"
+                            android:id="@+id/text30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+                    </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/temaRel"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:layout_below="@+id/sireRel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/checkBoxTema"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/big_margin"
+                        android:src="@drawable/check_box_empty"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_big"
+                        android:textColor="@color/darkGrey"
+                        android:text="TEMA SUITABLE"
+                        android:layout_toRightOf="@+id/checkBoxTema"
+                        android:id="@+id/text35"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/left_edge_margin" />
+
+
+                </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <!-- LAYOUT ZA TELEPHONE -->
+
+                <!-- Ram za layout za dugme dole -->
+                <RelativeLayout
+                    android:id="@+id/buttonSystem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/listLay"
+                    >
+
+                    <!-- Layout za dugme SIGNIN -->
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bottom_button_shape"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/linearLayout3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAVE"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="@dimen/font_size_standard"
+                            android:textStyle="bold"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
